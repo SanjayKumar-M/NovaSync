@@ -1,8 +1,13 @@
 import { Sequelize } from "sequelize";
 
+
 const PostgresConnection = async() =>{
     
-    const sequelize = new Sequelize('postgres://postgres:Sanjay@007@localhost:5432/novasync')
+    const DB_USER_NAME = process.env.DB_USER_NAME;
+    const DB_PASSWORD = process.env.DB_PASSWORD;
+    const DATABASE = process.env.DATABASE_NAME;
+
+    const sequelize = new Sequelize(`postgres://${DB_USER_NAME}:${DB_PASSWORD}@localhost:5432/${DATABASE}`)
     try {
     await sequelize.authenticate();
     console.log('Connection has been established successfully.');

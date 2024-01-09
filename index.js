@@ -1,6 +1,8 @@
 import express from 'express'
 import userRoute from './routes/userRoute.js'
 import PostgresConnection from './config/postgres.js'
+import dotenv from 'dotenv'
+dotenv.config()
 const app = express()
 
 PostgresConnection()
