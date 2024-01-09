@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 
 
 const PostgresConnection = async() =>{
-    
+
     const DB_USER_NAME = process.env.DB_USER_NAME;
     const DB_PASSWORD = process.env.DB_PASSWORD;
     const DATABASE = process.env.DATABASE_NAME;
@@ -14,7 +14,7 @@ const PostgresConnection = async() =>{
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }
-
+  return sequelize;
 }
 
-export default PostgresConnection
+export {Sequelize, PostgresConnection}
