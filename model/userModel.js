@@ -1,9 +1,9 @@
-import { PostgresConnection, Sequelize } from "../config/postgres.js";
+import { PostgresConnection} from "../config/postgres.js";
 import DataTypes from 'sequelize'
 
 const sequelize = await PostgresConnection();
 
-const UserModel = sequelize.define('User',{
+const User = sequelize.define('User',{
     username:{
         type:DataTypes.STRING,
         allowNull:false,
@@ -24,4 +24,4 @@ const UserModel = sequelize.define('User',{
 
 })
 
-export default UserModel;
+export default User;

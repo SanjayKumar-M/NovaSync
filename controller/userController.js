@@ -1,7 +1,7 @@
 import expressAsyncHandler from "express-async-handler";
 
 import bcrypt from 'bcrypt'
-import UserModel from "../model/userModel";
+import User from "../model/userModel.js";
 
 const register = expressAsyncHandler(async(req,res)=>{
 
@@ -14,9 +14,13 @@ const register = expressAsyncHandler(async(req,res)=>{
 
     const hashedPassword = await bcrypt.hash(password,10)
 
-    const newUser = await UserModel.create({
-        username,email, password:hashedPassword
-    })
+    const newUser = await User.create({
+        username,
+        email,
+        password: hashedPassword
+    }).catch(error => {
+        console.error('Error creating user:', error);
+    });
 
    
     if(newUser){
