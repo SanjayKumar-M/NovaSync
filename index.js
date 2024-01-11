@@ -11,6 +11,6 @@ app.use(express.json());
 await PostgresConnection()
 
 app.use('/user',userRoute)
-app.use('/api',taskRoute)
+app.use('/',taskRoute)
 
 app.listen(3000,()=>{console.log("Server running successfully...")})
