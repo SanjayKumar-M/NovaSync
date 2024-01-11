@@ -6,7 +6,7 @@ const task = expressAsyncHandler(async (req, res) => {
         const { agenda, mode, location, description, date, time, reminder } = req.body;
 
         if (agenda) {
-            // Create an agenda
+            
             const newAgenda = await Agenda.create({
                 agenda, mode, location, description, date, time
             });
@@ -17,7 +17,7 @@ const task = expressAsyncHandler(async (req, res) => {
                 res.status(500).json({ message: 'Internal Server Error' });
             }
         } else if (reminder) {
-            // Create a reminder
+          
             const newReminder = await Reminder.create({
                 reminder, description, date, time
             });
