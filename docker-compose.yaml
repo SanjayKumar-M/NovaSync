@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      PGHOST: "127.0.0.1"
+      PGUSER: "postgres"
+      PGPASSWORD: "Sanjay@007"
+      PGDATABASE: "novasync"
