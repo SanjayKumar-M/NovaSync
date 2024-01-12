@@ -1,9 +1,8 @@
-// userController.js
-
 import expressAsyncHandler from "express-async-handler";
 import bcrypt from 'bcrypt';
 import User from "../model/userModel.js";
 import jwt from 'jsonwebtoken';
+import { emailNotification } from "../notifications/emailNotification.js";
 
 const register = expressAsyncHandler(async (req, res) => {
     const { username, email, password } = req.body;
@@ -22,6 +21,7 @@ const register = expressAsyncHandler(async (req, res) => {
         });
 
         if (newUser) {
+            emailNotification(newUser.email,`Welcome to Novasync ${newUser.username}`,'Use novasync to schdeule your tasks or agenda at your ease!')
             return res.status(201).json({ message: "User Created Successfully", email: newUser.email });
         } else {
             return res.status(500).json({ message: 'Internal Server Error' });
@@ -53,7 +53,7 @@ const login = expressAsyncHandler(async (req, res) => {
                 "thetokensecret",
                 { expiresIn: "20m" }
             );
-
+            emailNotification(user.email,'Logged In',`New login found from your account ${user.username}`)
             return res.status(200).json({ accessToken });
         } else {
             return res.status(401).json({ message: "Invalid email or password." });
@@ -66,13 +66,13 @@ const login = expressAsyncHandler(async (req, res) => {
 
 const currentUser = expressAsyncHandler(async (req, res, next) => {
     try {
-        // Extract user information from the request (you might need to adapt this based on your authentication setup)
+        
         const user = req.user;
 
         if (user) {
-            // Attach user information to the request
+            
             req.currentUser = user;
-            next(); // Call next to pass control to the next middleware or route handler
+            next(); 
         } else {
             res.status(401).json({ message: 'User not authenticated' });
         }

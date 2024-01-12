@@ -8,10 +8,12 @@ config.json
 
 
 
-
-"agenda": "Nothing but testing",
+{
+ "agenda": "Attend Ethindia Hackathon",
   "mode": "offline",
-  "location": "chennai",
-  "description": "Sanjay is having meet with elon musk",
+  "location": "Bangalore",
+  "description": "Sanjay is going to attend Ethindia Hackathon world's biggest ethereum hackathon",
   "date": "2024-01-26",
   "time": "18:00"
+ 
+}

@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 
   export async function emailNotification(recipientEmail, subject, message) {
     const mailOptions = {
-      from: 'your-email@gmail.com',
+      from: 'sanjay@novasync.com',
       to: recipientEmail,
       subject,
       text: message,
