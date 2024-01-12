@@ -21,7 +21,7 @@ const commonAttributes = {
 
 }
 
-const Agenda = sequelize.define('agenda', {
+const Agenda = sequelize.define('Agenda', {
 
    agenda: {
     type: DataTypes.STRING,

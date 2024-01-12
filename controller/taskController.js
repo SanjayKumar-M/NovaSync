@@ -23,7 +23,8 @@ const task = expressAsyncHandler(async (req, res) => {
             });
 
             if (newReminder) {
-                res.status(201).json({ message: `Your Reminder scheduled successfully on ${newReminder.date} at ${newReminder.time}` });
+               
+                res.status(201).json({ message: `Your Reminder scheduled successfully on ${newReminder.date} ` });
             } else {
                 res.status(500).json({ message: 'Internal Server Error' });
             }
