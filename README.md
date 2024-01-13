@@ -61,3 +61,38 @@
    "date": "2024-01-26",
    "time": "18:00"
 }
+
+## Schedule Agenda:
+
+- **Endpoint:** `localhost:3000/task` [POST]
+- **Request Body Example:**
+```json
+{
+    "agenda": "Attend Ethindia Hackathon",
+    "mode": "offline",
+    "location": "Bangalore",
+    "description": "Sanjay is going to attend Ethindia Hackathon, the world's biggest Ethereum hackathon",
+    "date": "2024-01-26",
+    "time": "18:00"
+}
+
+## Delete Agenda/reminder:
+
+- **Endpoint:** `localhost:3000/task` [DELETE]
+- **Request Body Example:**
+```json
+{
+    "agenda": "Attend Ethindia Hackathon"
+}
+
+or
+
+```json
+{
+    "reminder": "Read Rust Docs"
+}
+
+
+##Get email notifications once the agenda is scheduled and at the specified time.
+##Enjoy a well-organized schedule with NovaSync!
+
