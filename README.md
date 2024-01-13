@@ -96,6 +96,16 @@ or
 }
 ```
 
+![register](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/ac6acc19-50d7-4065-9ab2-5859bf2d760a)
+
+![login](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/cbc68271-6b1f-45b0-8ceb-106b94db6050)
+
+![Screenshot from 2024-01-11 02-02-27](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/5670da16-73ea-4557-87b3-229ae8537db0)
+
+![Screenshot from 2024-01-11 02-02-27](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/0d8e3ea6-3c2e-434d-bcd7-d116dbe82041)
+
+
+
 ## Get email notifications once the agenda is scheduled and at the specified time.
 ## Enjoy a well-organized schedule with NovaSync!
 
