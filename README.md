@@ -61,6 +61,7 @@
    "date": "2024-01-26",
    "time": "18:00"
 }
+```
 
 ## Schedule Agenda:
 
@@ -75,6 +76,7 @@
     "date": "2024-01-26",
     "time": "18:00"
 }
+```
 
 ## Delete Agenda/reminder:
 
@@ -84,6 +86,7 @@
 {
     "agenda": "Attend Ethindia Hackathon"
 }
+```
 
 or
 
@@ -91,7 +94,7 @@ or
 {
     "reminder": "Read Rust Docs"
 }
-
+```
 
 ##Get email notifications once the agenda is scheduled and at the specified time.
 ##Enjoy a well-organized schedule with NovaSync!
