@@ -96,6 +96,6 @@ or
 }
 ```
 
-##Get email notifications once the agenda is scheduled and at the specified time.
-##Enjoy a well-organized schedule with NovaSync!
+## Get email notifications once the agenda is scheduled and at the specified time.
+## Enjoy a well-organized schedule with NovaSync!
 
