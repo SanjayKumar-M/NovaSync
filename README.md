@@ -102,10 +102,30 @@ or
 
 ![Screenshot from 2024-01-11 02-02-27](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/5670da16-73ea-4557-87b3-229ae8537db0)
 
-![Screenshot from 2024-01-11 02-02-27](https://github.com/SanjayKumar-M/NovaSync/assets/73515250/0d8e3ea6-3c2e-434d-bcd7-d116dbe82041)
-
-
-
 ## Get email notifications once the agenda is scheduled and at the specified time.
+
+# Load Test Summary with Artillery
+
+## Test Duration
+The load test ran for 1 minute and 1 second.
+
+## Request Load
+- Total Requests: 1200
+- Request Rate: 20 requests per second
+
+## HTTP Response Time
+- Minimum Response Time: 64 milliseconds
+- Maximum Response Time: 203 milliseconds
+- Mean Response Time: 78.7 milliseconds
+- Median Response Time: 74.4 milliseconds
+- P95 (95th percentile): 106.7 milliseconds
+- P99 (99th percentile): 133 milliseconds
+
+## HTTP Status Codes
+- 200 OK: 600 requests
+- 201 Created: 1 request
+- 500 Internal Server Error: 599 requests
+
+
 ## Enjoy a well-organized schedule with NovaSync!
 

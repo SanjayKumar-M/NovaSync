@@ -4,11 +4,11 @@ dotenv.config()
 
 const PostgresConnection = async() =>{
 
-  const DB_USER_NAME = process.env.DB_USER_NAME;
-  const DB_PASSWORD = process.env.DB_PASSWORD;
-  const DATABASE = process.env.DATABASE_NAME;
-  const POSTGRE_URL = process.env.POSTGRE_URL;
-  const sequelize = new Sequelize(POSTGRE_URL)
+  // const DB_USER_NAME = process.env.DB_USER_NAME;
+  // const DB_PASSWORD = process.env.DB_PASSWORD;
+  // const DATABASE = process.env.DATABASE_NAME;
+  // const POSTGRE_URL = process.env.POSTGRE_URL;
+  const sequelize = new Sequelize(process.env.LOCAL_URL)
     try {
     await sequelize.authenticate();
     console.log('Connection has been established successfully.');

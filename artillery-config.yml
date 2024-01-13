@@ -1,0 +1,23 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+
+scenarios:
+  - flow:
+      - post:
+          url: '/user/register'
+          json:
+            username: "Prabhakaran"
+            email: "praba@tamil.com"
+            password: "praba"
+          expect:
+           -statusCode: 201
+      - post:
+          url: '/user/login'
+          json:
+            email: "praba@tamil.com"
+            password: "praba"
+          expect:
+           -statusCode: 200
